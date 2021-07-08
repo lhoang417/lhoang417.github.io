@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"/>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
-
 </head>
 <body>
     <header>
@@ -25,30 +21,33 @@
         <nav class="top-nav">
             <ul class="nav-list">
                 <li>
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li>
                     <a href="#about" class="nav-link">about</a>
                 </li>
                 <li>
                     <a href="#skills" class="nav-link">skills</a>
                 </li>
                 <li>
-                    <a href="#projects" class="nav-link">projects</a>
+                    <a href="#experience" class="nav-link">projects</a>
                 </li>
                 <li>
-                    <a href="contacts" class="nav-link">contact</a>
+                    <a href="#contact" class="nav-link">contact</a>
                 </li>
             </ul>
         </nav>
-        <div class="landing-text">
-            <h1>Linh Hoang</h1>
+        <div class="landing-text" id="home">
+            <h1 data-aos="fade-down" data-aos-delay="300">Linh Hoang</h1>
             <h6>Student Developer | DevMountain</h6>
         </div>
     </header>
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img">
-                <img src="https://github.com/lhoang417/pictures/blob/main/COLOR_POP.jpg?raw=true" alt="Admin" class="rounded-circle" width="100">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="https://github.com/lhoang417/pictures/blob/main/COLOR_POP.jpg?raw=true" alt="Admin" class="rounded-circle" width="150">
             </div>
-            <div class="about-details">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
                 <div class="about-heading">
                     <h1>About</h1>
                     <h6>Myself</h6>
@@ -63,47 +62,63 @@
 
         </div>
     </section>
+
     <section class="skills" id="skills">
         <div class="container">
             <div class="section-heading">
                 <h1>Skills</h1>
-
+                <h6>What I have experience with</h6>
             </div>
             <div class="my-skills">
-                <div class="skill">
+                <div class="skill" data-aos="fade-right" data-aos-delay="300">
                     <div class="icon-container">
                         <i class="devicon-javascript-plain"></i>
                     </div>
                     <h1>JavaScript</h1>
                     <p>
-                        We use JavaScript on a daily
-                        to help us 
+                        We use JavaScript on a daily to help us implement our code. We use anything from Async programming,  to functional programming, and we've even learned about Time and Space Complexity.
                     </p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-right" data-aos-delay="200">
                     <div class="icon-container">
                         <i class="devicon-nodejs-plain"></i>
                     </div>
                     <h1>Nodejs</h1>
                     <p>
-                        Lorem Ipsum
-                        Lorum Ipsum
+                        Using Node. js, we've been able to test out our apps using both front end and back end components. We've tested exchanging data between servers using Axios as a promise base client for our browser.
                     </p>
                 </div>
-                <div class="skill">
+                <div class="skill" data-aos="fade-left" data-aos-delay="200">
                     <div class="icon-container">
                         <i class="devicon-html5-plain"></i>
                     </div>
                     <h1>HTML5</h1>
                     <p>
-                        Lorem Ipsum
-                        Lorum Ipsum
+                       We've learned to utilize scripts within our HTML files for functionality, and also CSS for styling the page. I've recently learned how to use AOS to add a bit of animation to my sites. 
+                    </p>
+                </div>
+                <div class="skill" data-aos="fade-left" data-aos-delay="300">
+                    <div class="icon-container">
+                        <i class="devicon-bash-plain"></i>
+                    </div>
+                    <h1>bash</h1>
+                    <p>
+                        We learned how to utilize gitbash to make and navigate to directories on our computer, and also runming commands to connect to github and linking repositories.
+                    </p>
+                </div>
+                <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                    <div class="icon-container">
+                        <i class="devicon-postgresql-plain"></i>
+                    </div>
+                    <h1>SQL</h1>
+                    <p>
+                        We've had some practice with SQL in week 4, learning about table relationships and also organizing data from databases.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
         <div class="container">
             <div class="section-heading">
                 <h1>Projects</h1>
@@ -111,7 +126,32 @@
             </div>
 
         </div>
+    </section> -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Projects</h1>
+                <h6>View my recent projects</h6>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="Trip List" >
+                        <p>A site that allows you to add destinations at a glance.</p>
+                        <h1><a class="links" href="https://destination-lab.herokuapp.com/"target="_blank" rel="noopener noreferrer">Live Link</a><a class="links" href="https://youtu.be/P9PkAXTSoD0"target="_blank" rel="noopener noreferrer"><br>Demo</a></h1>
+                    </li>
+                    <li class="date" data-date="LoTR Characters">
+                        <p>A site that allows you to create new LoTR Characters.</p>
+                        <h1><a class="links" href="https://traceabilitylab.herokuapp.com/"target="_blank" rel="noopener noreferrer">Live Link</a></h1></h1>
+                    </li>
+                    <li class="date" data-date="Tic Tac Toe">
+                        <p>A site that allows you to play Tic Tac Toe.</p>
+                        <h1><a class="links" href="https://week6assessment.herokuapp.com/"target="_blank" rel="noopener noreferrer">Live Link</a></h1>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
+    
     <section class="contact" id="contact">
         <div class="container">
             <div class="section-heading">
@@ -121,18 +161,18 @@
             <div class="social-media">
                 <ul class="nav-list">
                     <li>
-                        <a href="#" class="icon-link">
-                            <i class="devicon-facebook-plain"></i>
+                        <a href="https://www.facebook.com/profile.php?id=100002859837352" target="_blank" rel="noopener noreferrer" class="icon-link">
+                            <i class="devicon-facebook-plain" data-aos="fade-in" data-aos-delay="200"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="icon-link">
-                            <i class="devicon-linkedin-plain"></i>
+                        <a href="https://www.linkedin.com/in/linh-hoang-615058144" target="_blank" rel="noopener noreferrer" class="icon-link">
+                            <i class="devicon-linkedin-plain" data-aos="fade-in" data-aos-delay="300"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#" class="icon-link">
-                            <i class="devicon-github-original"></i>
+                        <a href="https://github.com/lhoang417" target="_blank" rel="noopener noreferrer" class="icon-link">
+                            <i class="devicon-github-original" data-aos="fade-in" data-aos-delay="400"></i>
                         </a>
                     </li>
                     
@@ -142,12 +182,31 @@
     </section>
     <footer class="copyright">
         <div class="up" id="up">
-            <i class="fas fa-chevron-up"></i>
+            <i class="fas fa-chevron-up" id="top" onclick="topFunction()"></i>
         </div>
-        <p>&copy; 2021 Linh Hoang</p>
+        <p>LINH HOANG</p>
     </footer>
-    <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+
+    <script>
+        topBtn = document.querySelector("#top")
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                topBtn.style.display = "block";
+            } else {
+                topBtn.style.display = "none";
+            }
+            }
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+    </script>
+    <script>
+        AOS.init({
+            easing: 'ease',
+            duration: 1800
+        })
+    </script>
 </body>
 </html>
