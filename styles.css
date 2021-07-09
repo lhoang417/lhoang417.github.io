@@ -80,7 +80,7 @@ li{
 .landing-text h1{
     font-size: 23rem;
     font-family: Brush Script MT;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #f5de34, #f754bb);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -184,7 +184,7 @@ li{
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px olid #ffe838;
+    border: 3px olid #f5de34;
     background-color: #16162d;
     margin-bottom: 2rem;
     display: flex;
@@ -199,8 +199,8 @@ li{
 
 
 .timeline ul{
-    border-left: 4px solid #ffe838;
-    border-right: 4px solid #ffe838;
+    border-left: 4px solid #f5de34;
+    border-right: 4px solid #f5de34;
     border-radius: .8rem;
     background-color: rgba(0,0,0, 0.05);
     margin: 0 auto;
@@ -285,13 +285,13 @@ li{
 }
 @keyframes pulse{ /* controls the intermediate steps in an animation sequence for pulse */
     0%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 #f754bb;
     }
     70%{
         box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
     }
     100%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 #f754bb;
     }
 }
 ::-webkit-scrollbar {
