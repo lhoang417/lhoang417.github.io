@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css"/>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- calling in AOS, animation on scroll -->
 </head>
 <body>
     <header>
@@ -110,19 +110,21 @@
                     <p>
                         We've had some practice with SQL in week 4, learning about table relationships and also organizing data from databases.
                     </p>
+                </div>  
+                    <div class="skill" data-aos="fade-right" data-aos-delay="200">
+                        <div class="icon-container">
+                            <i class="devicon-express-original"></i>
+                        </div>
+                        <h1>Express</h1>
+                        <p>
+                           Express works hand in hand with Node to handle requests like GET, PUT, POST, and DELETE requests.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- <section class="projects" id="projects">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Projects</h1>
-                <h6>View my recent projects</h6>
-            </div>
 
-        </div>
-    </section> -->
     <section class="experience" id="experience">
         <div class="container">
             <div class="section-heading">
@@ -185,11 +187,11 @@
 
     <script>
         function topFunction() {
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            document.documentElement.scrollTop = 0; 
             }
     </script>
     <script>
-        AOS.init({
+        AOS.init({ // initializing AOS on the page
             easing: 'ease',
             duration: 1800
         })
