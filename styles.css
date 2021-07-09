@@ -294,6 +294,15 @@ li{
         box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
     }
 }
+::-webkit-scrollbar {
+    background: linear-gradient(to top, #16162d, #A92251, #16162d);
+
+}
+::-webkit-scrollbar-thumb {
+    background: #16162d;
+    border-radius: 8px;
+  }
+  
 
 @media screen and (max-width: 768px){ /* changes the properties of elements dependent on browswer window size */
     body{
