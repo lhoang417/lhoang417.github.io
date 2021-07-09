@@ -307,7 +307,9 @@ li{
     .nav-list{
         flex-direction: column;
         height: 30vh;
+        align-items: center;
     }
+
     .landing-text h6{
         font-size: 1.7rem;
     }
@@ -334,7 +336,7 @@ li{
         margin: 0 0 0 auto;
     }
     .timeline .date:before{
-        left: -22rem;
+        left: -25rem;
     }
     .timeline .date:after{
         left: -8rem;
@@ -355,10 +357,10 @@ li{
         flex-direction: column;
     }
     .profile-img{
-        margin: 0 0 7rem 0;
+        margin: 0 0 5rem 0;
     }
     .profile-img{
-        margin: 0 0 2rem 0;
+        margin: 2rem 0 2rem 8rem;
         order: 1;
     }
     .timeline p{
@@ -366,6 +368,7 @@ li{
     }
     .timeline .date::before{
         font-size: 1.4rem;
+        left: -25rem;
     }
     .up{
         right: 2rem;
