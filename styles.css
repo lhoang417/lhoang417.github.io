@@ -310,8 +310,8 @@ li{
     body{
         width: 100vw;
         height: 100vh;
-        background: url('https://designshack.net/wp-content/uploads/background-textures.png') no-repeat center fixed;
-        background-size: cover;
+        background: url('https://designshack.net/wp-content/uploads/background-textures.png') repeat center fixed;
+        background-size: auto;
     }
     .landing-text h1{
         font-size: 15rem;
@@ -349,7 +349,7 @@ li{
         font-size: 4rem;
     }
     .timeline ul{
-        margin: 0 4rem 0 auto;
+        margin: 0 3.5rem 0 auto;
     }
     .timeline .date:before{
         left: -25rem;
