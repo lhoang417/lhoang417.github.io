@@ -414,6 +414,9 @@ li {
   .timeline .date:after {
     left: -8rem;
   }
+  .social-media .nav-list {
+    bottom: 25rem;
+  }
 }
 @media screen and (max-width: 600px) {
   .landing-text h1 {
