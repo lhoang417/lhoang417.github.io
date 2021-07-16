@@ -321,12 +321,13 @@ li {
   bottom: 5%;
   right: 2%;
   border-radius: 100%;
-  display: flex;
+  display: none;
   animation: pulse 2s infinite; /* sets animation, pulse is down below, infinite loops */
   cursor: pointer;
 }
 .up i {
-  padding-top: 1.4rem;
+  position: relative;
+  padding-top: 25%;
   color: #16162d;
   font-size: 2rem;
   margin: auto;
