@@ -418,16 +418,13 @@ li {
     font-size: 4rem;
   }
   .timeline ul {
-    margin: 0 3.5rem 0 auto;
+    margin: 0 3.2rem 0 auto;
   }
   .timeline .date:before {
     left: -25rem;
   }
   .timeline .date:after {
     left: -8rem;
-  }
-  .social-media .nav-list {
-    bottom: 20%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -461,6 +458,11 @@ li {
   }
   .up {
     right: 2rem;
+  }
+  .social-media .nav-list {
+    margin-bottom: 20%;
+    transform: scale(0.5);
+    width: 0;
   }
 }
 .links:hover {
