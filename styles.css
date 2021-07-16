@@ -125,6 +125,16 @@ li {
   flex: 1;
   margin-right: 0rem;
 }
+.rounded-circle {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.rounded-circle:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .about-details {
   flex: 1;
 }
@@ -180,13 +190,13 @@ li {
   top: 0;
 }
 .social-media ul li:nth-child(1) a:before {
-  background: #3b5998;
+  background: linear-gradient(to top, #036ce4, #18aafd);
 }
 .social-media ul li:nth-child(2) a:before {
-  background: #0e76a8;
+  background: linear-gradient(to top, #0e76a8, #18aafd);
 }
 .social-media ul li:nth-child(3) a:before {
-  background: black;
+  background: linear-gradient(to top, #211f1f, #272b33);
 }
 .my-skills {
   margin-top: 10rem;
@@ -335,7 +345,7 @@ li {
   position: relative;
   padding-top: 25%;
   color: #16162d;
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin: auto;
 }
 .end p {
@@ -460,8 +470,9 @@ li {
     right: 2rem;
   }
   .social-media .nav-list {
+    position: absolute;
     margin-bottom: 20%;
-    transform: scale(0.5);
+    transform: scale(0.75);
     width: 0;
   }
 }
@@ -470,14 +481,4 @@ li {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.5s ease-in-out;
-}
-.rounded-circle {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-.rounded-circle:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
 }
