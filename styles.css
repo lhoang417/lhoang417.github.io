@@ -313,18 +313,20 @@ li {
   position: relative;
 }
 .up {
-  position: absolute;
+  position: fixed;
   width: 5rem;
   height: 5rem;
   background-color: #eee;
-  top: -2.5rem;
-  right: 5rem;
+  /* top: 64.5rem; */
+  bottom: 5%;
+  right: 2%;
   border-radius: 100%;
   display: flex;
   animation: pulse 2s infinite; /* sets animation, pulse is down below, infinite loops */
   cursor: pointer;
 }
 .up i {
+  padding-top: 1.4rem;
   color: #16162d;
   font-size: 2rem;
   margin: auto;
@@ -354,7 +356,11 @@ li {
 ::-webkit-scrollbar-corner {
   background: #16162d;
 }
-
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 @media screen and (max-width: 768px) {
   /* changes the properties of elements dependent on browswer window size */
   body {
