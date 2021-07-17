@@ -25,7 +25,7 @@ section {
   padding: 6rem 0; /* rem is relative to the font-size of the root element, em is relative to font-size of particular element */
 }
 a {
-  text-decoration: none; /* specifies the decoration added to text, leaving at none makes it not show */
+  text-decoration: none; /* , normally a tags have underlines, text decoration:none makes it not show */
   color: #eee;
 }
 p {
@@ -92,18 +92,20 @@ li {
 .landing-text h1 {
   font-size: 23rem;
   font-family: Brush Script MT;
-  background: linear-gradient(to top, #f5de34, #f754bb);
+  /* background: linear-gradient(to top, #f5de34, #f754bb);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   padding: 1rem;
   user-select: none; /*specifies whether the text of an element can be selected*/
+  text-shadow: 0 0 10px #f5de34, 0 0 20px #f5de34, 0 0 40px #f5de34,
+    0 0 80px #f5de34, 0 0 120px #f5de34; /*testing out neon colors*/
 }
 .landing-text h6 {
   font-size: 2rem;
   font-weight: 300;
 }
 .about .container {
-  display: flex;
+  display: flex; /* displaying in-line flex */
   align-items: center;
   justify-content: center;
 }
@@ -125,13 +127,13 @@ li {
   flex: 1;
   margin-right: 0rem;
 }
-.rounded-circle {
+.profile-pic {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-.rounded-circle:hover {
+.profile-pic:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -168,6 +170,7 @@ li {
   transition: 1s;
   z-index: 3;
 }
+
 .social-media ul li a:hover .icon {
   margin-left: -2.5rem;
   margin-top: 0.965rem;
@@ -245,13 +248,14 @@ li {
 }
 .skill h1 {
   text-transform: uppercase;
+  font-weight: 800;
   letter-spacing: 2px;
   margin: 2rem -2px 2rem 0;
 }
 .icon-container {
   width: 10rem;
   height: 10rem;
-  border: 3px olid #f5de34;
+  border: 2.5px solid #f5de34;
   background-color: #16162d;
   margin-bottom: 2rem;
   display: flex;
@@ -283,33 +287,35 @@ li {
   margin-bottom: 2rem;
   opacity: 0.6;
 }
-.timeline .date {
+.timeline .project {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   position: relative;
 }
-.timeline .date:last-of-type {
+.timeline .project:last-of-type {
   padding-bottom: 0;
   margin-bottom: 0;
   border: none;
 }
-.timeline .date::before,
-.timeline .date::after {
+.timeline .project::before,
+.timeline .project::after {
   /*allows you to insert content onto a page without it needing to be in the HTML. While the end result is not actually in the DOM, it appears on the page as if it is*/
   position: absolute;
   display: block;
-  top: 50%;
+  top: 25%;
   transform: translateY(-50%);
 }
-.timeline .date::before {
-  content: attr(data-date);
+.timeline .project::before {
+  content: attr(
+    data-project
+  ); /* used with the ::before and ::after pseudo-elements, to insert generated content.*/
   left: -25rem;
   text-align: right;
   min-width: 15rem;
   font-size: 2rem;
 }
-.timeline .date::after {
+.timeline .project::after {
   content: "";
   box-shadow: 0 0 0 4px #16162d;
   border-radius: 100%;
@@ -332,28 +338,63 @@ li {
   position: fixed;
   width: 5rem;
   height: 5rem;
-  background-color: #eee;
+  background: linear-gradient(45deg, transparent, transparent 40%, #e5f403);
   /* top: 64.5rem; */
   bottom: 5%;
   right: 2%;
   border-radius: 100%;
   display: none;
-  animation: pulse 2s infinite; /* sets animation, pulse is down below, infinite loops */
+  /* animation: pulse 2s infinite; sets animation, pulse is down below, infinite loops */
   cursor: pointer;
+}
+.up::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: #000;
+  border-radius: 100%;
+}
+.up::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(45deg, transparent, transparent 50%, #e5f403);
+  border-radius: 100%;
+  z-index: 1;
+  /* z-index: 1; */
+  /* filter: blur(30px); */
+  animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
 }
 .up i {
   position: relative;
   padding-top: 25%;
-  color: #16162d;
+  color: #c2cc34;
   font-size: 2.2rem;
   margin: auto;
+  z-index: 2;
 }
 .end p {
   font-size: 1.4rem;
 }
-@keyframes pulse {
-  /* controls the intermediate steps in an animation sequence for pulse */
-  0% {
+/* @keyframes pulse { */
+/* controls the intermediate steps in an animation sequence for pulse */
+/* 0% {
     box-shadow: 0 0 0 0 #f754bb;
   }
   70% {
@@ -362,7 +403,7 @@ li {
   100% {
     box-shadow: 0 0 0 0 #f754bb;
   }
-}
+} */
 ::-webkit-scrollbar {
   background: linear-gradient(to top, #16162d, #a92251, #16162d);
 }
@@ -430,16 +471,17 @@ li {
   .timeline ul {
     margin: 0 3.2rem 0 auto;
   }
-  .timeline .date:before {
+  .timeline .project:before {
     left: -25rem;
   }
-  .timeline .date:after {
+  .timeline .project:after {
     left: -8rem;
   }
 }
 @media screen and (max-width: 600px) {
   .landing-text h1 {
     font-size: 8rem;
+    font-family: Brush Script MT;
   }
   .landing-text h6 {
     font-size: 4rem;
@@ -462,7 +504,7 @@ li {
   .timeline p {
     font-size: 1.6rem;
   }
-  .timeline .date::before {
+  .timeline .project::before {
     font-size: 1.3rem;
     left: -24rem;
   }
@@ -470,7 +512,7 @@ li {
     right: 2rem;
   }
   .social-media .nav-list {
-    position: absolute;
+    position: relative;
     margin-bottom: 20%;
     transform: scale(0.75);
     width: 0;
@@ -480,5 +522,9 @@ li {
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.5s ease-in-out;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
