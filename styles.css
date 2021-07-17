@@ -265,7 +265,7 @@ li {
   color: #ffe838;
   font-size: 5rem;
   margin: auto;
-  transform: rotate(-45deg);
+  transform: rotate(-45deg); /* rotates the actual element by -45deg */
 }
 
 .timeline ul {
@@ -287,6 +287,11 @@ li {
   margin-bottom: 2rem;
   opacity: 0.6;
 }
+.links:hover {
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .timeline .project {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 1rem;
@@ -304,7 +309,7 @@ li {
   position: absolute;
   display: block;
   top: 25%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); /* shifts the element along the Y axis by -50% */
 }
 .timeline .project::before {
   content: attr(
@@ -517,14 +522,9 @@ li {
     transform: scale(0.75);
     width: 0;
   }
-}
-.links:hover {
-  background: linear-gradient(to top, #ffe838, #fd57bf);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
+  @media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
   }
 }
