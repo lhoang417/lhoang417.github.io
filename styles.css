@@ -479,7 +479,7 @@ header .nav-list.active {
     font-size: 10rem;
   }
   .menu-toggler {
-    transform: scale(50%);
+    transform: scale(35%);
     flex-direction: column;
     height: 10vh;
     align-items: center;
@@ -533,13 +533,13 @@ header .nav-list.active {
     font-size: 1.5rem;
   }
   .menu-toggler {
-    transform: scale(50%);
+    transform: scale(35%);
     flex-direction: column;
     height: 10vh;
     align-items: center;
   }
   .nav-link {
-    font-size: 2.5rem;
+    font-size: 5rem;
     width: 100%;
     padding: 0;
   }
