@@ -463,8 +463,8 @@ header .nav-list.active {
 @media screen and (max-width: 768px) {
   /* changes the properties of elements dependent on browswer window size */
   body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(
       to right,
       #61174b,
@@ -483,6 +483,9 @@ header .nav-list.active {
     flex-direction: column;
     height: 10vh;
     align-items: center;
+  }
+  .menu-toggler .bar {
+    margin: 0 -3rem;
   }
   .nav-link {
     font-size: 1rem;
