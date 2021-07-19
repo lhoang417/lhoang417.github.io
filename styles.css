@@ -122,7 +122,6 @@ header .nav-list.active {
   z-index: 1;
 }
 .landing-text h1 {
-  width: 100vw;
   font-size: 23rem;
   font-family: Brush Script MT;
   /* background: linear-gradient(to top, #f5de34, #f754bb);
@@ -136,7 +135,6 @@ header .nav-list.active {
   -webkit-box-reflect: below -0.6em linear-gradient(transparent, white);
 }
 .landing-text h6 {
-  width: 100vw;
   font-size: 2rem;
   font-weight: 300;
   margin-top: -10rem;
@@ -477,19 +475,14 @@ header .nav-list.active {
     );
   }
   .landing-text h1 {
-    position: relative;
-    width: 100vw;
     margin-top: -5rem;
-    font-size: 10rem;
+    font-size: 8rem;
   }
   .menu-toggler {
-    transform: scale(30%);
+    transform: scale(20%);
     flex-direction: column;
     height: 10vh;
     align-items: center;
-  }
-  .menu-toggler .bar {
-    margin: 0 -3rem;
   }
   .nav-link {
     font-size: 1rem;
@@ -497,9 +490,8 @@ header .nav-list.active {
     padding: 0;
   }
   .landing-text h6 {
-    width: 100vw;
     margin-top: -3rem;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
   .about-heading h1 {
     font-size: 8rem;
@@ -531,20 +523,7 @@ header .nav-list.active {
   }
 }
 @media screen and (max-width: 600px) {
-  body {
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(
-      to right,
-      #61174b,
-      #bc1c4c,
-      #d32052,
-      #bc1c4c,
-      #61174b
-    );
-  }
   .landing-text h1 {
-    position: relative;
     margin-top: -12.5rem;
     font-size: 8rem;
     font-family: Brush Script MT;
@@ -554,16 +533,13 @@ header .nav-list.active {
     font-size: 1.5rem;
   }
   .menu-toggler {
-    transform: scale(30%);
+    transform: scale(20%);
     flex-direction: column;
     height: 10vh;
     align-items: center;
   }
-  .menu-toggler .bar {
-    margin: 0 -3rem;
-  }
   .nav-link {
-    font-size: 5rem;
+    font-size: 2.5rem;
     width: 100%;
     padding: 0;
   }
