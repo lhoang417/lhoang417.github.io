@@ -14,16 +14,12 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script> <!-- calling in AOS, animation on scroll -->
 </head>
 <body>
-    <header id="top">
-        <div class = "menu-toggler" onclick="toggleMenu()">
-            <div class="bar" id="one"></div>
-            <div class="bar" id="two"></div>
-            <div class="bar" id="three"></div>
-        </div>
+    <header>
+
         <nav class="top-nav">
             <ul class="nav-list">
                 <li>
-                    <a href="#top" class="nav-link">home</a>
+                    <a href="index.html" class="nav-link">home</a>
                 </li>
                 <li>
                     <a href="#about" class="nav-link">about</a>
@@ -40,16 +36,16 @@
             </ul>
         </nav>
         <div class="landing-text" id="home">
-            <h1 data-aos="fade-right" data-aos-delay="100">Linh Hoang</h1> <!-- calling in AOS, there are different effects you can use (fade-down), and delay is the amount of time it takes to show -->
-            <h6 data-aos="fade-right" data-aos-delay="100">Student Developer | DevMountain</h6>
+            <h1 data-aos="fade-down" data-aos-delay="200">Linh Hoang</h1> <!-- calling in AOS, there are different effects you can use (fade-down), and delay is the amount of time it takes to show -->
+            <h6>Student Developer | DevMountain</h6>
         </div>
     </header>
     <section class="about" id="about">
         <div class="container">
-            <div class="profile-img" data-aos="fade-right" data-aos-delay="50"> 
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="200"> 
                 <img src="https://github.com/lhoang417/pictures/blob/main/COLOR_POP.jpg?raw=true" alt="Admin" class="profile-pic" width="150">
             </div>
-            <div class="about-details" data-aos="fade-left" data-aos-delay="100">
+            <div class="about-details" data-aos="fade-left" data-aos-delay="500">
                 <div class="about-heading">
                     <h1>About</h1>
                     <h6>Myself</h6>
@@ -146,7 +142,7 @@
                 <h1>Projects</h1>
                 <h6>View my recent projects</h6>
             </div>
-            <div class="timeline" data-aos="fade-right" data-aos-delay="300">
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
                 <ul>
                     <li class="project" data-project="Trip List" >
                         <p>A site that allows you to add destinations at a glance.</p>
@@ -219,14 +215,6 @@
             easing: 'ease',
             duration: 1800
         })
-    </script>
-    <script>
-                function toggleMenu(){
-            const menuToggler = document.querySelector('.menu-toggler');
-            const navigation = document.querySelector('.nav-list');
-            menuToggler.classList.toggle('active');
-            navigation.classList.toggle('active')
-        }
     </script>
 </body>
 </html>
