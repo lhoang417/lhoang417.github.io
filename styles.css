@@ -7,6 +7,7 @@ html {
 	font-size: 10px;
 	font-family: "Roboto", sans-serif;
 	color: #eee;
+	scroll-behavior: smooth;
 }
 body {
 	width: 100%;
@@ -156,7 +157,7 @@ li {
 	text-align: center;
 	line-height: 80px;
 	font-size: 50px;
-	margin: 0 10px;
+	margin: 0 15px;
 	display: block;
 	border-radius: 50%;
 	position: relative;
@@ -421,11 +422,11 @@ li {
 ::-webkit-scrollbar-corner {
 	background: #16162d;
 }
-@media screen and (prefers-reduced-motion: no-preference) {
+/* @media screen and (prefers-reduced-motion: no-preference) {
 	html {
 		scroll-behavior: smooth;
 	}
-}
+} */
 @media screen and (max-width: 768px) {
 	/* changes the properties of elements dependent on browswer window size */
 	body {
