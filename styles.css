@@ -21,6 +21,7 @@ body {
 		#61174b
 	);
 	background-size: cover;
+	overflow-x: hidden;
 }
 section {
 	padding: 6rem 0; /* rem is relative to the font-size of the root element, em is relative to font-size of particular element */
@@ -416,6 +417,8 @@ li {
 }
 ::-webkit-scrollbar-thumb {
 	background: #16162d;
+	box-shadow: 0 0 10px #f5de34, 0 0 20px #f5de34, 0 0 40px #f5de34,
+		0 0 80px #f5de34, 0 0 120px #f5de34;
 	border-radius: 5px;
 }
 ::-webkit-scrollbar-corner {
